@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="rootStackPane" prefHeight="575.0" prefWidth="814.0" stylesheets="@../../resources/them.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.management.MainUser.Settings.SettingsController">
+   <children>
+      <AnchorPane id="AnchorPane" fx:id="rootAnchorPane" prefHeight="400.0" prefWidth="600.0" StackPane.alignment="CENTER">
+         <children>
+            <VBox>
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="22.0" prefWidth="676.0">
+                     <children>
+                        <FontAwesomeIcon iconName="COGS" size="2.5em" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Réglages" textAlignment="CENTER" wrappingWidth="105.33669972419739">
+                           <font>
+                              <Font name="Berlin Sans FB" size="20.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <VBox alignment="CENTER_LEFT" styleClass="retourn-container">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="42.0" prefWidth="794.0">
+                           <children>
+                              <FontAwesomeIcon iconName="KEY" size="2em" wrappingWidth="31.20001220703125" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Changez votre mot de passe" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <JFXPasswordField fx:id="oldpass" labelFloat="true" promptText="Mot de passe">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="20.0" right="450.0" top="10.0" />
+                           </VBox.margin>
+                           <padding>
+                              <Insets top="10.0" />
+                           </padding>
+                        </JFXPasswordField>
+                        <JFXPasswordField fx:id="newpass" labelFloat="true" promptText="Nouveau mot de passe">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="20.0" right="450.0" top="10.0" />
+                           </VBox.margin>
+                           <padding>
+                              <Insets top="10.0" />
+                           </padding>
+                        </JFXPasswordField>
+                        <JFXPasswordField fx:id="connewpass" labelFloat="true" promptText="Confirmez le mot de passe">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="20.0" right="450.0" top="10.0" />
+                           </VBox.margin>
+                           <padding>
+                              <Insets top="10.0" />
+                           </padding>
+                        </JFXPasswordField>
+                        <HBox alignment="CENTER_RIGHT">
+                           <VBox.margin>
+                              <Insets bottom="10.0" right="30.0" top="10.0" />
+                           </VBox.margin>
+                           <children>
+                              <JFXButton onAction="#handleSavePass" prefWidth="133.0" styleClass="buttons" text="Sauvegarder">
+                                 <graphic>
+                                    <FontAwesomeIcon iconName="SAVE" size="1.5em" styleClass="glyph-icon" wrappingWidth="22.628522872924805" />
+                                 </graphic>
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+                     </VBox.margin>
+                  </VBox>
+                  <VBox alignment="CENTER_RIGHT" styleClass="retourn-container">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+                     </VBox.margin>
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="42.0" prefWidth="794.0">
+                           <children>
+                              <FontAwesomeIcon iconName="INFO" size="2em" wrappingWidth="22.4000244140625" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Changez votre info" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <JFXTextField fx:id="email" labelFloat="true" promptText="E-mail">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="20.0" right="450.0" top="10.0" />
+                           </VBox.margin>
+                           <padding>
+                              <Insets top="10.0" />
+                           </padding>
+                        </JFXTextField>
+                        <JFXTextField fx:id="cin" labelFloat="true" layoutX="10.0" layoutY="140.0" promptText="CIN">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="20.0" right="450.0" top="10.0" />
+                           </VBox.margin>
+                           <padding>
+                              <Insets top="10.0" />
+                           </padding>
+                        </JFXTextField>
+                        <HBox alignment="CENTER_RIGHT">
+                           <children>
+                              <JFXButton onAction="#handleSaveInfo" prefWidth="133.0" styleClass="buttons" text="Sauvegarder">
+                                 <graphic>
+                                    <FontAwesomeIcon iconName="SAVE" size="1.5em" styleClass="glyph-icon" wrappingWidth="22.628522872924805" />
+                                 </graphic>
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="10.0" right="30.0" top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <HBox alignment="BOTTOM_RIGHT">
+                     <children>
+                        <JFXButton onAction="#handleDeleteAccount" prefHeight="27.0" prefWidth="202.0" styleClass="buttons" text="Supprimer votre compte">
+                           <graphic>
+                              <FontAwesomeIcon iconName="USER_TIMES" size="1.5em" styleClass="glyph-icon" />
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" right="30.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </children></AnchorPane>
+   </children>
+</StackPane>

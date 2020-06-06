@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="rootStackPane" stylesheets="@../resources/them.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.management.ListBook.List_BookController">
+   <children>
+      <AnchorPane id="AnchorPane" fx:id="rootAnchorPane" prefHeight="526.0" prefWidth="985.0" styleClass="mainFxmlClass">
+         <children>
+            <HBox alignment="TOP_CENTER" layoutX="6.0" layoutY="-4.0" prefHeight="52.0" prefWidth="200.0" spacing="60.0" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="-6.0" AnchorPane.topAnchor="-4.0">
+               <children>
+                  <JFXTextField fx:id="search" labelFloat="true" prefWidth="265.0" promptText="Recherche">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+                  <JFXButton onAction="#Supprimer" prefHeight="26.0" prefWidth="199.0" styleClass="supp-button" text="Supprimer" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIcon iconName="TIMES_CIRCLE" size="1.2em" styleClass="glyph-icon" wrappingWidth="17.942831993103027" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton layoutX="796.0" layoutY="23.0" onAction="#modifierlivre" prefHeight="26.0" prefWidth="199.0" styleClass="mod-button" text="Modifier " textFill="WHITE">
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIcon iconName="EDIT" size="1.2em" styleClass="glyph-icon" wrappingWidth="19.999975204467773" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </HBox>
+            <TableView fx:id="tableview" layoutY="49.0" prefHeight="480.0" prefWidth="986.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="70.0">
+              <columns>
+                <TableColumn fx:id="idcol" prefWidth="45.60000687837601" text="ID" />
+                  <TableColumn fx:id="titrecol" prefWidth="159.20000839233398" text="Titre" />
+                  <TableColumn fx:id="auteurcol" prefWidth="98.39997863769531" text="Auteur" />
+                  <TableColumn fx:id="editeurcol" minWidth="0.0" prefWidth="120.0" text="Editeur" />
+                  <TableColumn fx:id="nb_pagescol" prefWidth="107.20001220703125" text="Nombre des pages" />
+                  <TableColumn fx:id="descol" prefWidth="379.99993896484375" text="Description" />
+                  <TableColumn fx:id="emplacementcol" minWidth="0.0" prefWidth="77.60009765625" text="Emplacement" />
+                  <TableColumn fx:id="discol" minWidth="0.0" prefWidth="77.60009765625" text="Disponibilité" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

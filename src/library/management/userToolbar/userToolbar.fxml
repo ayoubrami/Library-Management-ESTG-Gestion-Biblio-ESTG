@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="root" prefHeight="484.0" prefWidth="137.0" stylesheets="@../resources/them.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.management.userToolbar.UserToolbarController">
+   <children>
+      <JFXButton contentDisplay="TOP" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#LoadMesLivers" prefHeight="400.0" prefWidth="300.0" styleClass="toolbar" text="Mes livres">
+         <graphic>
+            <FontAwesomeIcon iconName="LIST_ALT" size="3.5em" styleClass="glyph-icon" />
+         </graphic>
+      </JFXButton>
+      <JFXButton contentDisplay="TOP" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#loadReserver" prefHeight="400.0" prefWidth="300.0" styleClass="toolbar" text="Réserver">
+         <graphic>
+            <FontAwesomeIcon iconName="CALENDAR" size="3.5em" styleClass="glyph-icon" />
+         </graphic>
+      </JFXButton>
+      <JFXButton contentDisplay="TOP" layoutX="10.0" layoutY="98.0" mnemonicParsing="false" onAction="#LoadReglages" prefHeight="400.0" prefWidth="300.0" styleClass="toolbar" text="Réglages">
+         <graphic>
+            <FontAwesomeIcon iconName="COGS" size="3.5em" styleClass="glyph-icon" />
+         </graphic>
+      </JFXButton>
+      <JFXButton contentDisplay="TOP" layoutX="10.0" layoutY="274.0" mnemonicParsing="false" onAction="#signOut" prefHeight="400.0" prefWidth="300.0" styleClass="toolbar" text="Déconnexion">
+         <graphic>
+            <FontAwesomeIcon iconName="SIGN_OUT" size="3.5em" styleClass="glyph-icon" />
+         </graphic>
+      </JFXButton>
+   </children>
+</VBox>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="root" prefHeight="484.0" prefWidth="137.0" stylesheets="@../resources/them.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.management.toolbar.ToolbarController">
+   <children>
+      <JFXButton contentDisplay="TOP" mnemonicParsing="false" onAction="#loadAjouterLivre" prefHeight="400.0" prefWidth="300.0" styleClass="toolbar" text="Ajoutez un livre">
+         <graphic>
+            <FontAwesomeIcon iconName="BOOK" size="3.0em" styleClass="glyph-icon" />
+         </graphic>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </JFXButton>
+      <JFXButton contentDisplay="TOP" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#LoadDemandes" prefHeight="400.0" prefWidth="300.0" styleClass="toolbar" text="Demandes d'emprunt">
+         <graphic>
+            <FontAwesomeIcon iconName="CHECK_SQUARE" size="3.0em" styleClass="glyph-icon" />
+         </graphic>
+      </JFXButton>
+      <JFXButton contentDisplay="TOP" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#loadListBook" prefHeight="400.0" prefWidth="300.0" styleClass="toolbar" text="Les livres">
+         <graphic>
+            <FontAwesomeIcon iconName="TABLE" size="3.0em" styleClass="glyph-icon" />
+         </graphic>
+      </JFXButton>
+      <JFXButton contentDisplay="TOP" layoutX="10.0" layoutY="172.0" mnemonicParsing="false" onAction="#loadIssuedook" prefHeight="400.0" prefWidth="300.0" styleClass="toolbar" text="Les livres Emprunter">
+         <graphic>
+            <FontAwesomeIcon iconName="TH_LIST" size="3.0em" styleClass="glyph-icon" />
+         </graphic>
+      </JFXButton>
+      <JFXButton contentDisplay="TOP" layoutX="10.0" layoutY="98.0" mnemonicParsing="false" onAction="#Loadlistmembers" prefHeight="400.0" prefWidth="300.0" styleClass="toolbar" text="Les utilisateurs">
+         <graphic>
+            <FontAwesomeIcon iconName="USERS" size="3.0em" styleClass="glyph-icon" />
+         </graphic>
+      </JFXButton>
+      <JFXButton contentDisplay="TOP" layoutX="10.0" layoutY="274.0" mnemonicParsing="false" onAction="#LoadSettings" prefHeight="400.0" prefWidth="300.0" styleClass="toolbar" text="Réglages">
+         <graphic>
+            <FontAwesomeIcon iconName="COGS" size="3.0em" styleClass="glyph-icon" />
+         </graphic>
+      </JFXButton>
+      <JFXButton contentDisplay="TOP" layoutX="10.0" layoutY="397.0" mnemonicParsing="false" onAction="#LoadSignOut" prefHeight="400.0" prefWidth="300.0" styleClass="toolbar" text="Déconnexion">
+         <graphic>
+            <FontAwesomeIcon iconName="SIGN_OUT" size="3.0em" styleClass="glyph-icon" />
+         </graphic>
+      </JFXButton>
+   </children>
+</VBox>

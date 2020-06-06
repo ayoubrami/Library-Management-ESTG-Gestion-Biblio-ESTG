@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="rootStackPane" prefHeight="323.0" prefWidth="482.0" stylesheets="@../resources/them.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.management.settings.SettingsController">
+   <children>
+      <BorderPane fx:id="rootBorderPane" prefHeight="200.0" prefWidth="200.0">
+         <center>
+            <AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="278.0" prefWidth="850.0" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXTabPane>
+                     <tabs>
+                        <Tab text="login">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="302.0" prefWidth="850.0">
+                                 <children>
+                                    <VBox alignment="CENTER" layoutX="270.0" layoutY="40.0" prefHeight="195.0" prefWidth="309.0">
+                                       <children>
+                                          <JFXTextField fx:id="username" labelFloat="true" promptText="Username">
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="30.0" />
+                                             </VBox.margin>
+                                          </JFXTextField>
+                                          <JFXPasswordField fx:id="password" labelFloat="true" promptText="Password">
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="30.0" />
+                                             </VBox.margin>
+                                          </JFXPasswordField>
+                                       </children>
+                                    </VBox>
+                                    <HBox alignment="CENTER" layoutX="204.0" layoutY="236.0" prefHeight="51.0" prefWidth="442.0" spacing="50.0">
+                                       <children>
+                                          <JFXButton onAction="#save" prefHeight="100.0" prefWidth="200.0" styleClass="buttons" text="Sauvgarder">
+                                             <HBox.margin>
+                                                <Insets top="20.0" />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                             <graphic>
+                                                <FontAwesomeIcon iconName="SAVE" size="1.2em" styleClass="glyph-icon" wrappingWidth="17.942831993103027" />
+                                             </graphic>
+                                          </JFXButton>
+                                          <JFXButton layoutX="10.0" layoutY="10.0" onAction="#cancel" prefHeight="100.0" prefWidth="200.0" styleClass="buttons" text="Annuler">
+                                             <HBox.margin>
+                                                <Insets top="20.0" />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                             <graphic>
+                                                <FontAwesomeIcon iconName="CLOSE" size="1.2em" styleClass="glyph-icon" wrappingWidth="15.828536033630371" />
+                                             </graphic>
+                                          </JFXButton>
+                                       </children>
+                                    </HBox>
+                                    <FontAwesomeIcon iconName="USER" layoutX="259.0" layoutY="112.0" size="1.5em" wrappingWidth="21.342869758605957" />
+                                    <FontAwesomeIcon iconName="KEY" layoutX="261.0" layoutY="194.0" size="1.5em" />
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </Tab>
+                        <Tab text="mail config">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox layoutX="260.0" layoutY="14.0" prefHeight="200.0" prefWidth="329.0">
+                                       <children>
+                                          <JFXTextField fx:id="servername" promptText="SMTP Server Name">
+                                             <VBox.margin>
+                                                <Insets bottom="20.0" />
+                                             </VBox.margin>
+                                          </JFXTextField>
+                                          <JFXTextField fx:id="port" layoutX="10.0" layoutY="10.0" promptText="SMTP Port">
+                                             <VBox.margin>
+                                                <Insets bottom="20.0" />
+                                             </VBox.margin>
+                                          </JFXTextField>
+                                          <JFXTextField fx:id="email" layoutX="10.0" layoutY="48.0" promptText="Email Address">
+                                             <VBox.margin>
+                                                <Insets bottom="20.0" />
+                                             </VBox.margin>
+                                          </JFXTextField>
+                                          <JFXPasswordField fx:id="pass" promptText="Mot de passe">
+                                             <VBox.margin>
+                                                <Insets bottom="20.0" />
+                                             </VBox.margin>
+                                          </JFXPasswordField>
+                                       </children>
+                                    </VBox>
+                                    <HBox alignment="CENTER" layoutX="94.0" layoutY="236.0" prefHeight="51.0" prefWidth="662.0" spacing="50.0">
+                                       <children>
+                                          <JFXButton onAction="#sendTest" prefHeight="31.0" prefWidth="262.0" styleClass="buttons" text="Envoyer un e-mail de test">
+                                             <HBox.margin>
+                                                <Insets top="20.0" />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                             <graphic>
+                                                <FontAwesomeIcon iconName="SEND_ALT" size="1.2em" styleClass="glyph-icon" wrappingWidth="19.199987411499023" />
+                                             </graphic>
+                                          </JFXButton>
+                                          <JFXButton layoutX="10.0" layoutY="10.0" onAction="#savemailconfig" prefHeight="100.0" prefWidth="200.0" styleClass="buttons" text="Sauvgarder">
+                                             <HBox.margin>
+                                                <Insets top="20.0" />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                             <graphic>
+                                                <FontAwesomeIcon iconName="SAVE" size="1.2em" styleClass="glyph-icon" wrappingWidth="19.542807579040527" />
+                                             </graphic>
+                                          </JFXButton>
+                                          <JFXButton layoutX="242.0" layoutY="30.0" onAction="#cancel" prefHeight="100.0" prefWidth="200.0" styleClass="buttons" text="Annuler">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets top="20.0" />
+                                             </HBox.margin>
+                                             <graphic>
+                                                <FontAwesomeIcon iconName="CLOSE" size="1.2em" styleClass="glyph-icon" wrappingWidth="17.71418857574463" />
+                                             </graphic>
+                                          </JFXButton>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                     </tabs>
+                  </JFXTabPane>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>
