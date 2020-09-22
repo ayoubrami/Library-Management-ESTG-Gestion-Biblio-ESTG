@@ -4,7 +4,7 @@ As part of an academic project, developing a desktop application using JavaFX, a
 ## Technologies
  *  JavaFX
  *  CSS
-    ### Libraries 
+### Libraries 
  *  [JFoenix](https://github.com/jfoenixadmin/JFoenix) -> JavaFX Material Design Library
  *  [Apache Derby](https://db.apache.org/derby/) -> Standalone Relational database
  *  [Apache Commons](https://commons.apache.org/) -> Creating SHA hash
