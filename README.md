@@ -5,7 +5,6 @@ As part of an academic project, building a desktop application that manages libr
  *  JavaFX
  *  CSS
 ### Libraries 
- *  JFoenix
  *  [JFoenix](https://github.com/jfoenixadmin/JFoenix) -> JavaFX Material Design Library
  *  [ApacheDerby](https://db.apache.org/derby/) -> Standalone Relational database
  *  [GSon](https://github.com/google/gson) -> Storing configuration
