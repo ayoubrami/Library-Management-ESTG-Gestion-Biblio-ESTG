@@ -1,5 +1,5 @@
 # Library Management
-As part of an academic project, building a desktop application that manages library of the higher school of technology (EST).
+As part of an academic project, developing a desktop application using JavaFX, application manages library of the higher school of technology (EST).
 * Developed by : [Ayoub Rami](https://github.com/ayoubrami)
 ## Technologies
  *  JavaFX
