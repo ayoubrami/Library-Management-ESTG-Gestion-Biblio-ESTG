@@ -22,3 +22,6 @@ As part of an academic project, developing a desktop application using JavaFX, a
 | Email     | Password    |
 |:---------:|:-----------:|
 | admin     |   admin     |
+
+ * Sign up
+ <img src="https://user-images.githubusercontent.com/48249732/94066417-5e9deb80-fde4-11ea-96cf-a12c4d2760e3.png" style="max-width:50%">
