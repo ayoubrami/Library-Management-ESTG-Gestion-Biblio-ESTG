@@ -15,8 +15,7 @@ As part of an academic project, developing a desktop application using JavaFX, a
  * Splash Screen
   <img src="https://user-images.githubusercontent.com/48249732/93923624-8b320480-fd0b-11ea-81db-a27e7eab5881.png" style="max-width:100%" >
  *Login
- <img src="https://user-images.githubusercontent.com/48249732/94056478-41622080-fdd6-11ea-93f9-f4b5f1fb0f85.png
-" style="max-width:100%" >
+ <img src="https://user-images.githubusercontent.com/48249732/94056478-41622080-fdd6-11ea-93f9-f4b5f1fb0f85.png" style="max-width:100%" >
 |**Default Login Credentials** |
 --------------------------------
 |    Email    |    Password    |
