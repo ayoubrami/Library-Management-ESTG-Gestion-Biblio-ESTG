@@ -17,7 +17,7 @@ As part of an academic project, developing a desktop application using JavaFX, a
  * Login
  <img src="https://user-images.githubusercontent.com/48249732/94056478-41622080-fdd6-11ea-93f9-f4b5f1fb0f85.png" style="max-width:90%" >
 |** Default Login Credentials ** |
---------------------------------
-|    Email    |    Password    |
---------------------------------
-|     admin    |     admin    |
+|--------------------------------|
+|    Email     |    Password     | 
+| ------------ ------------------|
+|     admin    |     admin       |
