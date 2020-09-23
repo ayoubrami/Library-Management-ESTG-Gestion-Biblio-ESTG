@@ -20,5 +20,6 @@ As part of an academic project, developing a desktop application using JavaFX, a
 
 |Default Login Credentials|
 |:-----------------------:|
+|:-----:|:--------:|
 | Email | Password |
 | admin |   admin  |
