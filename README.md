@@ -12,6 +12,6 @@ As part of an academic project, developing a desktop application using JavaFX, a
  *  [FontawesomeFX](https://bitbucket.org/Jerady/fontawesomefx) -> For icons
  *  [Java Mail API](http://www.oracle.com/technetwork/java/javamail/index.html) -> Email notifications
 ## Screenshots
- * Splash Screen
+  Splash Screen
 ![](https://user-images.githubusercontent.com/48249732/93923624-8b320480-fd0b-11ea-81db-a27e7eab5881.png)
 
