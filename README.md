@@ -26,7 +26,7 @@ As part of an academic project, developing a desktop application using JavaFX, a
  * Sign up
  <img src="https://user-images.githubusercontent.com/48249732/94066417-5e9deb80-fde4-11ea-96cf-a12c4d2760e3.png" style="max-width:50%">
   
- ### Admin Dashbord
+ ### Admin Dashboard
  <img src="https://user-images.githubusercontent.com/48249732/98857492-67638300-245f-11eb-84e7-91f563c7a4b3.png">
 
  * Add Book
@@ -47,10 +47,25 @@ As part of an academic project, developing a desktop application using JavaFX, a
  * Settings
 <img src="https://user-images.githubusercontent.com/48249732/98858649-4439d300-2461-11eb-906e-61b8a82edfef.png">
 
- * Issue Book To a User
- **(using book Id & user Id)**
+ * Issue Book To a User (using book Id & user Id)
 <img src="https://user-images.githubusercontent.com/48249732/98858766-73504480-2461-11eb-838f-05db287ad04b.png">
 <img src="https://user-images.githubusercontent.com/48249732/98858784-7814f880-2461-11eb-8d89-e137e682244b.png">
 
  * Renew/Return a Book
 <img src="https://user-images.githubusercontent.com/48249732/98858792-7b0fe900-2461-11eb-8165-8855393b9411.png">
+
+### User Dashboard
+ * Welcome screen 
+<img src="https://user-images.githubusercontent.com/48249732/98860162-86fcaa80-2463-11eb-8b81-d6c831ebe1f5.png">
+
+ * Available Books
+<img src ="https://user-images.githubusercontent.com/48249732/98860167-8a903180-2463-11eb-8f62-0b37294a1534.png">
+
+* My Books (Demanded,Reserved and Issued Books)
+<img src ="https://user-images.githubusercontent.com/48249732/98860132-7ea46f80-2463-11eb-8b5e-62a7b9e683af.png">
+
+* Unavailable Books for Reservation
+<img src ="https://user-images.githubusercontent.com/48249732/98860146-82d08d00-2463-11eb-98d4-b143622a8ca4.png">
+
+* Settings
+<img src ="https://user-images.githubusercontent.com/48249732/98860151-849a5080-2463-11eb-84c7-e11db498b526.png">
