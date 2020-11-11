@@ -25,4 +25,32 @@ As part of an academic project, developing a desktop application using JavaFX, a
 
  * Sign up
  <img src="https://user-images.githubusercontent.com/48249732/94066417-5e9deb80-fde4-11ea-96cf-a12c4d2760e3.png" style="max-width:50%">
- ### Admin Dashbord 
+  
+ ### Admin Dashbord
+ <img src="https://user-images.githubusercontent.com/48249732/98857492-67638300-245f-11eb-84e7-91f563c7a4b3.png">
+
+ * Add Book
+<img src="https://user-images.githubusercontent.com/48249732/98857660-a1cd2000-245f-11eb-97b7-4ee07436e50d.png">
+ 
+ * Borrowing Requests
+<img src ="https://user-images.githubusercontent.com/48249732/98857809-dfca4400-245f-11eb-8755-fc4fce20ee44.png">
+
+ * Library's Books 
+<img src="https://user-images.githubusercontent.com/48249732/98857987-2324b280-2460-11eb-9cf2-7a45b7c5cddb.png">
+
+ * Borrowed Books
+<img src="https://user-images.githubusercontent.com/48249732/98858619-3421f380-2461-11eb-8477-ccc5418fe07d.png">
+
+ * Users
+<img src="https://user-images.githubusercontent.com/48249732/98858644-41d77900-2461-11eb-9dd9-47d1d2b4bad9.png">
+
+ * Settings
+<img src="https://user-images.githubusercontent.com/48249732/98858649-4439d300-2461-11eb-906e-61b8a82edfef.png">
+
+ * Issue Book To a User
+ **(using book Id & user Id)**
+<img src="https://user-images.githubusercontent.com/48249732/98858766-73504480-2461-11eb-838f-05db287ad04b.png">
+<img src="https://user-images.githubusercontent.com/48249732/98858784-7814f880-2461-11eb-8d89-e137e682244b.png">
+
+ * Renew/Return a Book
+<img src="https://user-images.githubusercontent.com/48249732/98858792-7b0fe900-2461-11eb-8165-8855393b9411.png">
